@@ -1,0 +1,593 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  color: #e0e0e0;
+}
+
+/* Full-screen gradient background */
+body {
+  background: linear-gradient(135deg, #1a1a1a, #333); /* Gradient background */
+  color: #d1d1d1;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  line-height: 1.6;
+  min-height: 100vh;
+  position: relative; /* Make sure gradient is below other elements */
+}
+
+/* Title Styling */
+h1 {
+  color: #ffffff;
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Section Styling */
+.section-title {
+  font-size: 2rem;
+  color: #00adb5;
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #00adb5;
+  display: inline-block;
+  padding-bottom: 0.2rem;
+}
+
+.content {
+  max-width: 800px;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 8rem; /* Adjust position under header */
+  margin-bottom: 8rem; /* Adjusted for footer */
+  z-index: 1; /* Ensure content is above the transparent image */
+}
+
+/* Timeline with Vertical Line and Dots */
+.timeline {
+  position: relative;
+  margin-top: 2rem;
+  padding-left: 1.5rem;
+  border-left: 2px solid #00adb5;
+}
+
+.timeline-event {
+  position: relative;
+  margin-bottom: 2.5rem;
+  padding-left: 1rem;
+}
+
+.timeline-event h3 {
+  font-size: 1.6rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+/* Dots for timeline points */
+.timeline-event::before {
+  content: '•';
+  position: absolute;
+  left: -1.3rem;
+  color: #00adb5;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+/* Subtle Divider Lines */
+.divider {
+  border-bottom: 1px solid #4b4b4b;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+/* Left column for descriptive text */
+.description {
+  flex: 1;
+}
+
+/* Flex container for details */
+.details {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem; /* Space between text and image */
+  margin: 20px;
+  background: #282828;
+  padding: 1.5rem;
+  border-radius: 8px;
+  color: #e0e0e0;
+}
+
+/* Keep the text-content stacked in a column */
+.text-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Allow text to take more space */
+}
+
+/* Style for individual text elements */
+.text-content p {
+  margin-bottom: 0.5rem;
+}
+
+/* Style the image to be aligned on the right */
+.details img {
+  max-width: 240px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 4px; /* Optional: rounds the corners of the image */
+}
+
+/* Style for the image comparison section */
+.image-comparison {
+  display: flex;
+  justify-content: space-between; /* Space between the images */
+  margin: 2rem 0; /* Margin above and below */
+}
+
+/* Individual comparison item styling */
+.comparison-item {
+  flex: 1; /* Each item takes equal space */
+  margin: 0 1rem; /* Margin between items */
+  background: #282828; /* Background color similar to details */
+  padding: 1.5rem;
+  border-radius: 8px; /* Rounded corners */
+  text-align: center; /* Center the text */
+}
+
+/* Style the images */
+.comparison-item img {
+  max-width: 80%; /* Make sure images are responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 4px; /* Optional: round the corners of the images */
+}
+
+/* General Styles for Header and Footer */
+.header {
+  width: 100%;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  background: linear-gradient(135deg, #1a1a1a, #333);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+/* Header Positioning */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Header wave effect */
+.header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  left: 0;
+  background: inherit;
+  border-radius: 50% / 100%;
+  transform: translateY(-50%);
+}
+
+.header::before {
+  top: 100%;
+}
+
+/* Main content spacing to avoid overlap */
+.content {
+  margin-top: 8rem; /* Adjusted for header */
+  margin-bottom: 8rem; /* Adjusted for footer */
+}
+
+/* Fancy Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  /*background: rgba(0, 173, 181, 0.1);*/
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.navbar a {
+  color: #00adb5;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  position: relative;
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+/* Fancy hover effect for navbar links */
+.navbar a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #00adb5;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: right;
+}
+
+.navbar a:hover {
+  color: #ffffff;
+}
+
+.navbar a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* Full-page background image styling */
+.background-image {
+  position: absolute;            /* Position it at the top */
+  top: 0;
+  left: 0;
+  width: 100vw;                  /* Full viewport width */
+  height: 100vh;                 /* Full viewport height */
+  background-size: cover;        /* Cover entire element */
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3;                  /* Slight transparency */
+  z-index: -1;                   /* Place it behind other elements */
+  margin-top: 150px;
+}
+
+
+/* Showcase Section Styling */
+.showcase {
+  align-items: center;
+  background: #282828;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin: 2rem 0;
+}
+
+/* Content Section */
+.showcase-content {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Title Styling */
+.showcase-title {
+  font-size: 2rem;
+  color: #00adb5;
+  margin-bottom: 1rem;
+}
+
+/* Description Styling */
+.showcase-description {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  max-width: auto;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Image Section */
+.showcase-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+/* Showcase Section Styling - Large Variant */
+.showcase-large {
+  align-items: center;
+  background: #282828;
+  padding: 2rem; /* Keeps padding as per your earlier design */
+  border-radius: 16px; /* Larger rounded corners */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); /* Slightly larger shadow */
+  margin: 3rem 0;
+  
+  /* Make the showcase wider than the content */
+  width: 120%; /* Increase width to make it larger */
+  max-width: 100vw; /* Prevent it from exceeding the viewport */
+  margin-left: -10%; /* Pull it to the left so it becomes centered */
+  margin-right: -10%; /* Pull it to the right */
+}
+
+/* Content Section */
+.showcase-large-content {
+  text-align: center;
+  margin-bottom: 2.5rem; /* Adjusted for larger layout */
+}
+
+/* Title Styling */
+.showcase-large-title {
+  font-size: 2.5rem; /* Increased title size */
+  color: #00adb5;
+  margin-bottom: 1.2rem;
+}
+
+/* Description Styling */
+.showcase-large-description {
+  font-size: 1.2rem; /* Slightly larger description text */
+  color: #e0e0e0;
+  max-width: 900px; /* Set max width for larger frames */
+  margin: 0 auto;
+  line-height: 1.8; /* Increased line height for readability */
+}
+
+/* Image Section */
+.showcase-large-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px; /* Larger rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Larger image shadow */
+}
+
+
+/* Container for the population label and the list */
+.lijst-container {
+  display: flex;
+  flex-direction: row; /* Keeps the label and list in a row */
+  align-items: center; /* Vertically aligns items in the middle */
+  gap: 1rem; /* Space between the label and the list */
+}
+
+/* Style for the text part of the population (First item) */
+.lijst-text {
+  color: #e0e0e0; /* Same color as the other text */
+  font-size: 1rem; /* Keep the font size for the text part */
+}
+
+/* Styling for the Population list box */
+.lijst-list {
+  background-color: #282828; /* Same background color as other sections */
+  padding: 0.5rem 1rem; /* Smaller padding for a more compact box */
+  border-radius: 8px;
+  max-width: 250px; /* Limit the width of the box */
+  border: 2px solid #00adb5; /* Gives a border with color to match the theme */
+  margin-top: 0.2rem; /* Adjust for spacing */
+  margin-bottom: 0.4rem;
+}
+
+/* Remove bullet points and style the list */
+.lijst-list ul {
+  list-style-type: none; /* Removes default bullet points */
+  padding-left: 0; /* Removes padding from the left */
+  margin: 0; /* Removes margin */
+}
+
+.lijst-list li {
+  color: #e0e0e0; /* Text color for the list items */
+  margin-bottom: 0.3rem; /* Reduces space between list items */
+  font-size: 0.9rem; /* Smaller font size for the list items */
+}
+
+.lijst-list li::before {
+  content: "• "; /* Adds a custom bullet point */
+  color: #00adb5; /* Match the color to the theme */
+  font-size: 1rem; /* Adjust the bullet size */
+}
+
+/* Styling for the Stellar Neighborhood Table */
+.stellar-table {
+  width: 100%;
+  margin-top: 2rem;
+  border-collapse: collapse;
+  background-color: #282828; /* Same as your background for sections */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.stellar-table th, .stellar-table td {
+  padding: 1rem;
+  text-align: left;
+  color: #e0e0e0;
+  font-size: 1rem;
+}
+
+.stellar-table th {
+  background-color: #00adb5; /* Matching your theme color */
+  font-weight: 600;
+}
+
+.stellar-table tr:nth-child(even) {
+  background-color: #333; /* Lighter alternating row colors */
+}
+
+.stellar-table tr:nth-child(odd) {
+  background-color: #282828; /* Darker for odd rows */
+}
+
+.stellar-table td {
+  border-bottom: 1px solid #4b4b4b; /* Subtle divider between rows */
+}
+
+.stellar-table tr:hover {
+  background-color: #444; /* Hover effect for rows */
+}
+
+/* Menu Dots */
+.menu-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.menu-dots .dot {
+  height: 60px; /* Larger size for visibility */
+  width: 60px;
+  margin: 0 8px;
+  border-radius: 50%; /* Keeps dots circular */
+  display: inline-block;
+  cursor: pointer;
+  background-size: cover; /* Ensures the image covers the entire dot area */
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+
+.menu-dots .dot:hover {
+  transform: scale(1.3); /* Zooms on hover */
+}
+
+/* Unique Background Images for Each Dot */
+.menu-dots .dot1 {
+  background-image: url('../images/Kle.png'); 
+}
+
+.menu-dots .dot2 {
+  background-image: url('../images/placeholder2.png');
+}
+
+.menu-dots .dot3 {
+  background-image: url('../images/Getsi.png');
+}
+
+.menu-dots .dot4 {
+  background-image: url('../images/Klenūtsē.png');
+}
+
+.menu-dots .dot5 {
+  background-image: url('../images/Tsenke2.png');
+}
+
+.menu-dots .dot6 {
+  background-image: url('../images/Ūtsatsa.png');
+}
+
+.menu-dots .dot7 {
+  background-image: url('../images/Chinālo2.png');
+}
+
+.menu-dots .dot8 {
+  background-image: url('../images/Shunāta.png');
+}
+
+.menu-slide {
+  display: none; /* Hide by default */
+  padding: 20px;
+  background-color: #282828;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+.menu-slide.active {
+  display: block; /* Show the active slide */
+}
+
+/* Dropdown Navbar Styling */
+.navbar-special {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-special a {
+  color: #00adb5;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  position: relative;
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+/* Hover underline effect for main navbar links */
+.navbar-special a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #00adb5;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: right;
+}
+
+.navbar-special a:hover {
+  color: #ffffff;
+}
+
+.navbar-special a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Dropdown Container */
+.navbar-special .dropdown {
+  position: relative;
+}
+
+.navbar-special .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%; /* Places dropdown directly below the main item */
+  left: 0;
+  background-color: #282828;
+  border-radius: 8px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  min-width: 160px;
+  z-index: 1;
+  padding: 0.5rem 0;
+}
+
+/* Dropdown Links */
+.navbar-special .dropdown-content a {
+  color: #e0e0e0;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  display: block;
+  font-size: 1rem;
+  position: relative; /* For underline effect */
+  transition: color 0.3s ease;
+}
+
+/* Hover underline effect for dropdown links */
+.navbar-special .dropdown-content a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px; /* Thinner underline for dropdown items */
+  width: 100%;
+  background-color: #00adb5;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: right;
+}
+
+.navbar-special .dropdown-content a:hover {
+  color: #ffffff;
+}
+
+.navbar-special .dropdown-content a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Show dropdown on hover */
+.navbar-special .dropdown:hover .dropdown-content {
+  display: block;
+}

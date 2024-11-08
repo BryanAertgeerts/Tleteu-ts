@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stellar Neighborhood</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="../1style/style.css" />
+
+    <!-- Include Model-Viewer Script -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@google/model-viewer@2.0.0"
+    ></script>
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>The Stellar Neighberhood</h1>
+      <nav class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="Galaxy.html">the Galaxy</a>
+        <a href="Stellar-Neighberhood.html">stellar neighborhood</a>
+        <a href="Star.html">the star</a>
+        <a href="solarsystem.html">the solar system</a>
+        <a href="ThePlanets.html">The planets</a>
+
+      </nav>
+    </div>
+
+    <div class="content">
+      <h2 class="section-title">Overview</h2>
+      <p>
+        The Stellar Neighborhood refers to the 38 solar systems located within a
+        12-light-year radius of the Ēnlū system. This region lies about 21,000
+        light-years from the galactic core. The closest star system to Ēnlū is
+        situated approximately 1.5 light-years away. Ēnlū stands out as one of
+        the most massive stars in the Stellar Neighborhood, which is relatively
+        rare. The majority of other celestial bodies in the area are low-mass
+        M-type stars or brown dwarfs.
+      </p>
+      <aside class="details">
+        <div class="text-content">
+          <p>
+            <strong>Size:</strong>12 light-year radius 7238.23 light-year
+            (volume)
+          </p>
+          <p>
+            <strong>Location:</strong> 21134 light-years from core
+          </p>
+          <p><strong>Stellar density:</strong> 0.006 stars/ly³</p>
+          <p><strong>Population:</strong> Total stellar mass: 60</p>
+          <div class="lijst-container">
+            <div class="lijst-text"></div>
+            <div class="lijst-list">
+              <ul>
+                <li>1 FV star</li>
+                <li>3 GV stars</li>
+                <li>5 KV stars (Ēnlū)</li>
+                <li>30 MG stars</li>
+                <li>4 White dwarfs</li>
+                <li>17 Brown dwarfs</li>
+              </ul>
+            </div>
+          </div>
+          <p><strong>System types:</strong> Total star systems: 38</p>
+          <div class="lijst-container">
+            <div class="lijst-text"></div>
+            <div class="lijst-list">
+              <ul>
+                <li>21 Single (Ēnlū)</li>
+                <li>13 Binary</li>
+                <li>3 Triple</li>
+                <li>1 Quadruple </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <div class="showcase-large">
+        <!-- 3D Model Viewer -->
+        <h3 style="text-align: center">Explore the Ēnlū System in 3D</h3>
+        <model-viewer
+          src="../images/stellar2.glb"
+          alt="3D model of the Ēnlū system"
+          auto-rotate
+          camera-controls
+          loading="eager"
+          style="width: 80%; height: 500px; display: block; margin: 20px auto"
+        >
+        </model-viewer>
+      </div>
+      <div class="content">
+        <h2 class="section-title">Overview</h2>
+        <p>
+          This table represents the spatial details of various star systems
+          within a hypothetical galaxy, with respect to a reference point, Ēnlū,
+          located at coordinates (0, 0, 0). Each row in the table contains
+          information about the following attributes of a star system: Name: The
+          designation of the star system. Coordinates (ly): The 3D coordinates
+          (in light-years) of the star system relative to Ēnlū. These
+          coordinates represent the system's location in the galaxy. System
+          Type: Indicates whether the star system consists of a single star,
+          binary stars (two stars), or multiple stars (triple or quadruple
+          systems). Constituent Star(s): Describes the type(s) of stars that
+          make up the system, such as K, M, G, F, Y, L, D, T, or combinations of
+          these. Distance to Ēnlū (ly): The distance in light-years from Ēnlū to
+          each star system, representing how far each system is in the galaxy.
+          This data is essential for understanding the distribution and
+          characteristics of different star systems within this hypothetical
+          galaxy, and can help in mapping out stellar patterns, distances, and
+          system compositions.
+        </p>
+      </div>
+      <table class="stellar-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Coordinates (ly)</th>
+            <th>System type</th>
+            <th>Constituent star</th>
+            <th>Distance to Ēnlū (ly)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ēnlū</td>
+            <td>(0, 0, 0)</td>
+            <td>Single</td>
+            <td>K</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Star System 1</td>
+            <td>(-0.76, -3.53, -2.95)</td>
+            <td>Single</td>
+            <td>M</td>
+            <td>4.66</td>
+          </tr>
+          <tr>
+            <td>Star System 2</td>
+            <td>(-0.87, -1.01, 0.43)</td>
+            <td>Single</td>
+            <td>M</td>
+            <td>1.40</td>
+          </tr>
+          <tr>
+            <td>Star System 3</td>
+            <td>(3.49, 8.4, 6.34)</td>
+            <td>Single</td>
+            <td>M</td>
+            <td>11.09</td>
+          </tr>
+          <tr>
+            <td>Star System 4</td>
+            <td>(0.29, -9.92, 1.5)</td>
+            <td>Single</td>
+            <td>M</td>
+            <td>10.03</td>
+          </tr>
+          <tr>
+            <td>Star System 5</td>
+            <td>(-1.19, 7.68, -4.72)</td>
+            <td>Single</td>
+            <td>M</td>
+            <td>9.09</td>
+          </tr>
+          <tr>
+            <td>Star System 6</td>
+            <td>(4.62, -3.1, -3)</td>
+            <td>Single</td>
+            <td>M</td>
+            <td>6.32</td>
+          </tr>
+          <tr>
+            <td>Star System 7</td>
+            <td>(1.66, -0.94, -1.93)</td>
+            <td>Single</td>
+            <td>F</td>
+            <td>2.71</td>
+          </tr>
+          <tr>
+            <td>Star System 8</td>
+            <td>(6.8, 0.02, -1.68)</td>
+            <td>Single</td>
+            <td>K</td>
+            <td>7.00</td>
+          </tr>
+          <tr>
+            <td>Star System 9</td>
+            <td>(1.97, -5.58, -4.03)</td>
+            <td>Single</td>
+            <td>M</td>
+            <td>7.16</td>
+          </tr>
+          <tr>
+            <td>Star System 10</td>
+            <td>(4.16, -9.77, 0.44)</td>
+            <td>Single</td>
+            <td>M</td>
+            <td>10.63</td>
+          </tr>
+          <tr>
+            <td>Star System 11</td>
+            <td>(-3.17, 5.79, 3.69)</td>
+            <td>Single</td>
+            <td>M</td>
+            <td>7.56</td>
+          </tr>
+          <tr>
+            <td>Star System 12</td>
+            <td>(3.63, 5.17, -4.68)</td>
+            <td>Single</td>
+            <td>M</td>
+            <td>7.86</td>
+          </tr>
+          <tr>
+            <td>Star System 13</td>
+            <td>(2, 0.65, 4.78)</td>
+            <td>Single</td>
+            <td>M</td>
+            <td>5.22</td>
+          </tr>
+          <tr>
+            <td>Star System 14</td>
+            <td>(8.84, -3.41, -6.37)</td>
+            <td>Single</td>
+            <td>K</td>
+            <td>11.41</td>
+          </tr>
+          <tr>
+            <td>Star System 15</td>
+            <td>(7.54, -2.68, -6.36)</td>
+            <td>Single</td>
+            <td>M</td>
+            <td>10.22</td>
+          </tr>
+          <tr>
+            <td>Star System 16</td>
+            <td>(-6.87, -6.88, 5.55)</td>
+            <td>Single</td>
+            <td>Y</td>
+            <td>11.20</td>
+          </tr>
+          <tr>
+            <td>Star System 17</td>
+            <td>(2.65, 0.14, 6.41)</td>
+            <td>Single</td>
+            <td>M</td>
+            <td>6.93</td>
+          </tr>
+          <tr>
+            <td>Star System 18</td>
+            <td>(-1.81, -5.5, 4.4)</td>
+            <td>Single</td>
+            <td>M</td>
+            <td>7.28</td>
+          </tr>
+          <tr>
+            <td>Star System 19</td>
+            <td>(0.42, 4.93, -5.93)</td>
+            <td>Single</td>
+            <td>M</td>
+            <td>7.72</td>
+          </tr>
+          <tr>
+            <td>Star System 20</td>
+            <td>(-3.01, 0.84, 1.59)</td>
+            <td>Single</td>
+            <td>G</td>
+            <td>3.50</td>
+          </tr>
+          <tr>
+            <td>Star System 21</td>
+            <td>(-2.78, -2.54, -10.6)</td>
+            <td>Binary</td>
+            <td>M - M</td>
+            <td>11.25</td>
+          </tr>
+          <tr>
+            <td>Star System 22</td>
+            <td>(8.91, 7.9, 0.2)</td>
+            <td>Binary</td>
+            <td>G - K</td>
+            <td>11.91</td>
+          </tr>
+          <tr>
+            <td>Star System 23</td>
+            <td>(-0.19, 3.91, 4.24)</td>
+            <td>Binary</td>
+            <td>M - D</td>
+            <td>5.77</td>
+          </tr>
+          <tr>
+            <td>Star System 24</td>
+            <td>(-0.27, 1.9, -6.18)</td>
+            <td>Binary</td>
+            <td>M - D</td>
+            <td>6.47</td>
+          </tr>
+          <tr>
+            <td>Star System 25</td>
+            <td>(-5.99, 7.97, -5.29)</td>
+            <td>Binary</td>
+            <td>M - M</td>
+            <td>11.29</td>
+          </tr>
+          <tr>
+            <td>Star System 26</td>
+            <td>(5.76, 2.46, 4.24)</td>
+            <td>Binary</td>
+            <td>L - L</td>
+            <td>7.56</td>
+          </tr>
+          <tr>
+            <td>Star System 27</td>
+            <td>(1.11, -6.89, -0.58)</td>
+            <td>Binary</td>
+            <td>L - L</td>
+            <td>7.00</td>
+          </tr>
+          <tr>
+            <td>Star System 28</td>
+            <td>(-5.56, -3.45, 7.51)</td>
+            <td>Binary</td>
+            <td>M - M</td>
+            <td>9.96</td>
+          </tr>
+          <tr>
+            <td>Star System 29</td>
+            <td>(5.43, -5.81, -1.31)</td>
+            <td>Binary</td>
+            <td>M - Y</td>
+            <td>8.05</td>
+          </tr>
+          <tr>
+            <td>Star System 30</td>
+            <td>(2.35, -3.69, -3.97)</td>
+            <td>Binary</td>
+            <td>D - L</td>
+            <td>5.91</td>
+          </tr>
+          <tr>
+            <td>Star System 31</td>
+            <td>(4.72, 0.4, -7.68)</td>
+            <td>Binary</td>
+            <td>K - L</td>
+            <td>9.02</td>
+          </tr>
+          <tr>
+            <td>Star System 32</td>
+            <td>(-3.94, -5.23, 7.37)</td>
+            <td>Binary</td>
+            <td>M - D</td>
+            <td>9.86</td>
+          </tr>
+          <tr>
+            <td>Star System 33</td>
+            <td>(-11.09, -0.41, 3.5)</td>
+            <td>Binary</td>
+            <td>M - L</td>
+            <td>11.63</td>
+          </tr>
+          <tr>
+            <td>Star System 34</td>
+            <td>(1.86, -3.97, -2.46)</td>
+            <td>Triple</td>
+            <td>L - L - L</td>
+            <td>5.02</td>
+          </tr>
+          <tr>
+            <td>Star System 35</td>
+            <td>(-4.96, -1.89, 10.25)</td>
+            <td>Triple</td>
+            <td>M - T - Y</td>
+            <td>11.54</td>
+          </tr>
+          <tr>
+            <td>Star System 36</td>
+            <td>(9.83, -2.52, 3.76)</td>
+            <td>Triple</td>
+            <td>G - T - T</td>
+            <td>10.82</td>
+          </tr>
+          <tr>
+            <td>Star System 37</td>
+            <td>(7.19, 1.61, 0.53)</td>
+            <td>Quadruple</td>
+            <td>M - M - L - T</td>
+            <td>7.38</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
